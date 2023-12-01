@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+
+input {
+    height: 1.5rem;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid rgb(146, 148, 148);
+    box-shadow: 0px 1px 4px rgb(177, 177, 177);
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.alphabet {
+    font-size: 20px;
+}
+
+.item {
+    color: rgb(0, 162, 255);
+    margin-top: 0.5rem;
+}
