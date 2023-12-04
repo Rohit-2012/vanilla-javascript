@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow&family=Kanit:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: rgb(31, 30, 30);
+}
+.container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Barlow', sans-serif;
+}
+h2{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Abel', sans-serif;
+}
+
+.txt {
+    color: rgb(243, 209, 134);
+    font-family: 'Kanit', sans-serif;
+    border-right: 1px solid rgb(243, 209, 134);
+}
