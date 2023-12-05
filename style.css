@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(3, 36, 109);
+  font-family: "Inconsolata", monospace;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: beige;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  align-items: center;
+}
+
+input {
+  box-sizing: border-box;
+  height: 2.5rem;
+  width: 80%;
+  padding: 0 1rem;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.5rem;
+}
+button {
+  background-color: rgb(15, 165, 15);
+  height: 2.2rem;
+  width: 8rem;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+#search-results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.output {
+  background-color: rgb(14, 47, 138);
+  width: 50%;
+  padding: 1rem;
+  color: rgb(17, 173, 17);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  line-height: 2rem;
+}
+.output h2 {
+  font-size: 2rem;
+}
+.output p {
+  font-family: "Orbitron", sans-serif;
+}
+
+.output span {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.type {
+  font-family: "Inconsolata", monospace;
+}
