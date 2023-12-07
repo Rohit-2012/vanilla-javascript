@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rohit Kirti" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Web Speech API</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/favicon.png" alt="icon" />
+
+      <form>
+        <textarea
+          name=""
+          id="text-input"
+          placeholder="Enter your text..."
+        ></textarea>
+        <div class="rate">
+          <label for="rate">Rate</label>
+          <div id="rate-value">1</div>
+          <input
+            type="range"
+            id="rate"
+            min="0.5"
+            max="2"
+            value="1"
+            step="0.1"
+          />
+        </div>
+        <div class="pitch">
+          <label for="pitch">Pitch</label>
+          <div id="pitch-value">1</div>
+          <input type="range" id="pitch" min="0" max="2" value="1" step="0.1" />
+        </div>
+        <select id="voice-select"></select>
+        <button id="speak">Speak</button>
+      </form>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

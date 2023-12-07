@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #141414;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+img {
+  width: 10rem;
+  margin-top: 3rem;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+textarea {
+  box-sizing: border-box;
+  height: 3rem;
+  width: 20rem;
+  padding: 0.4rem 1rem;
+  font-size: 16px;
+  border-radius: 0.4rem;
+}
+
+.rate,
+.pitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+#rate-value,
+#pitch-value {
+  background-color: white;
+  width: 1.5rem;
+  border-radius: 2px;
+}
+
+input[type="range"] {
+  appearance: unset;
+  width: 15rem;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+select {
+  width: 15rem;
+  height: 2rem;
+}
+
+button {
+  background-color: rgb(9, 102, 224);
+  border: none;
+  height: 1.8rem;
+  width: 5rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
