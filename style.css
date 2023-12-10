@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(155, 149, 149, 0.527);
+    padding: 2rem;
+}
+.container {
+  max-width: 760px;
+  margin: auto;
+  border: 1px solid #fff;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.main-image{
+    width: 100%;
+    height: 100%;
+}
+
+.images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.main-image img,
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.images img {
+    cursor: pointer;
+}
+.images img:hover {
+    opacity: 0.6;
+}
+@keyframes fadeIn{
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
