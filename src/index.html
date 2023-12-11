@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reddit Search</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <nav>
+          <h2>Reddit Search</h2>
+        </nav>
+      </header>
+
+      <div class="search-container">
+        <h2>Search Reddit</h2>
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search here..." />
+          <div class="sort">
+            <span class="sortLabel">Sort By:</span>
+            <div class="relevance">
+              <input
+                type="radio"
+                name="sortBy"
+                value="relevance"
+                id="relevance"
+                checked
+              />
+              <label for="relevance">Relevance</label>
+            </div>
+            <div class="latest">
+              <input type="radio" name="sortBy" value="new" id="latest" />
+              <label for="latest">Latest</label>
+            </div>
+          </div>
+          <div class="limit">
+            <label for="limit">Limit:</label>
+            <select name="limit" id="limit">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25" selected>25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <button type="submit" class="searchBtn">Search</button>
+        </form>
+      </div>
+      <div id="results"></div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
