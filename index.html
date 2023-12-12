@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rohit Kirti" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Type Fast | Speed Typing Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Type Fast</h1>
+    </header>
+    <div class="game-container">
+      <div class="message">Type the given word within <span id="seconds">5</span> seconds</div>
+      <div id="current-word">Hello</div>
+
+      <input
+        type="text"
+        id="word-input"
+        placeholder="Start Typing..."
+        autofocus
+      />
+
+      <h3 id="message"></h3>
+
+      <div class="progress">
+        <div class="time">
+          <h3>Time Left: <span id="time"></span></h3>
+        </div>
+        <div class="score">
+          <h3>Score: <span id="score">0</span></h3>
+        </div>
+      </div>
+      <div class="instruction">
+        <h3>Instruction</h3>
+        <p>
+          Type each word in the given amount of seconds to score. To play again,
+          just type the current word. Your score will reset
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
