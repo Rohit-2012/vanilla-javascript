@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rohit Kirti" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f5a3738bd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rohit kirti</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="result-container">
+        <span id="result"></span>
+        <button id="clipboard" class="btn">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="length">Character length</label>
+          <input type="number" id="length" min="4" max="20" value="10" />
+        </div>
+        <div class="setting">
+          <label for="uppercase">Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label for="lowercase">Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label for="number">Include number</label>
+          <input type="checkbox" id="number" checked />
+        </div>
+        <div class="setting">
+          <label for="symbols">Include symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+      <button class="generate" id="generate">Generate Password</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
