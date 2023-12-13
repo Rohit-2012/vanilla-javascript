@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rohit Kirti">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://kit.fontawesome.com/f5a3738bd6.js" crossorigin="anonymous"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper</h1>
+            <button id="restart">Restart Game</button>
+            <div id="score">
+                <p>Player: 0</p>
+                <p>Computer: 0</p>
+            </div>
+        </header>
+        <h2>Make your selection</h2>
+        <div id="choices">
+            <id id="rock" class="choice fas fa-hand-rock fa-10x"></id>
+            <id id="paper" class="choice fas fa-hand-paper fa-10x"></id>
+            <id id="scissors" class="choice fas fa-hand-scissors fa-10x"></id>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div id="result" class="modal-content">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
