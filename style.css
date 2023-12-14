@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://img.freepik.com/free-vector/mining-miner-cartoon-composition-with-underground-scenery-vintage-mine-facilities-with-tools-hard-hat-vector-illustration_1284-70867.jpg?w=740&t=st=1702565006~exp=1702565606~hmac=3b9e9015f1612cb0d61fba9eb5c7b72d899cd6f4a74b351c54991d6c3cb1c2ff")
+    no-repeat center center/cover;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 400px;
+  background-color: gray;
+}
+
+.grid div {
+  height: 40px;
+  width: 40px;
+  cursor: url("img/pickaxe-cursor.png"), auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.checked {
+  background-color: green;
+}
+
+.bomb {
+  /* background-color: red; */
+}
